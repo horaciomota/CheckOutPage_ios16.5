@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color.green.ignoresSafeArea(.all)
+            VStack {
+                HStack {
+                    VStack {
+                        Text("Payment completed!")
+                        Text("Thank you, your payment was successfuly completed!")
+                    }
+                }
+                VStack {
+                    Text("teste")
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .background(Color.white)
+            .padding(.horizontal)
         }
-        .padding()
+        
+        
+        
+        
     }
 }
 
